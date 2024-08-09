@@ -82,7 +82,7 @@ export function Home(){
                
             </div>
             <div className={`w-full `}>
-                <section className={`w-full mt-20 mx-auto p-5 pt-40 transition-transform duration-500 ${showComponentEffect ? 'md:translate-y-0' : 'md:-translate-y-32' }`}>
+                <section className={`w-full md:mt-20 mx-auto p-5 pt-10 md:pt-40 transition-transform duration-500 ${showComponentEffect ? 'md:translate-y-0' : 'md:-translate-y-32' }`}>
                     {/* <h1 className="text-6xl mb-4">Skills</h1> */}
                     <div className="md:grid md:grid-cols-3 gap-10">
                         <div className="flex flex-col p-1 pb-10">
