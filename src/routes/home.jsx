@@ -180,7 +180,7 @@ export function Home(){
                     </div>
                 </section>
                 <section className={`mt-10 pt-10 py-80 bg-gradient-to-r from-stone-400 to-slate-500 overflow-hidden transition-transform duration-500 `}>
-                    <div className="w-3/4">
+                    <div className="w-full md:w-3/4">
                         <div className={`flex flex-col gap-2 ml-10 transition-transform duration-500 pb-2 ${showComponentEffect ? 'md:translate-y-0' : 'md:translate-x-12'} ${showComponentEffect ? 'md:translate-y-0' : 'md:translate-y-24'}`}>
                             <h1 className="text-4xl">About Me</h1>
                             <p className="transition-transform duration-1000 hover:translate-y-5 leading-8 text-lg mb-4">Currently I am a fullstack web developer and cybersecurity student driven in learning about the security landscape.
