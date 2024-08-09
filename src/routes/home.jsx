@@ -30,7 +30,7 @@ export function Home(){
                 incorrectIndex = (incorrectIndex + 1) % titles.length;
                 rounds += incorrectIndex === 0 ? 1 : 0;
 
-                if ((rounds + 1) % 40 === 0) {
+                if ((rounds + 1) % 30 === 0) {
                     setPaused(true);
                     const newCorrectIndex = (correctIndex + 1) % titles.length;
                     setCorrectIndex(newCorrectIndex);
