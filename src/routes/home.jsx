@@ -7,6 +7,7 @@ export function Home(){
     const [paused, setPaused] = useState(false);
     const [correctIndex, setCorrectIndex] = useState(0);
     const [color, setColor] = useState();
+    // const [background, setBackground] = useState();
     
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
@@ -66,9 +67,9 @@ export function Home(){
                     <a>About</a>
                 </nav> */}
                 <div className="flex flex-col gap-12 text-center items-center mt-40 md:mt-60 justify-center bg-gradient-to-r from-stone-400 to-slate-500 pb-40 md:pb-72">
-                    <h1 className='text-5xl md:text-9xl font-sans font-normal'>Nathan Wong</h1>
+                    <h1 className='text-5xl md:text-8xl font-sans font-normal'>Nathan Wong</h1>
                     <div>
-                        <h2 className={`font-mono text-2xl ${color}`}>{'<'}{text}{'>'}</h2>
+                        <h2 className={`font-mono text-4xl ${color}`}>{'<'}{text}{'>'}</h2>
                         {/* <h2 className="font-mono text-md text-gray-600">{'<'}Cybersecurity Enthusiast{'>'}</h2> */}
                     </div>
                     <div className="flex gap-5">
