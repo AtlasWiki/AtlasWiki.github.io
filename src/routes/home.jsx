@@ -8,6 +8,7 @@ export function Home(){
     const [correctIndex, setCorrectIndex] = useState(0);
     const [color, setColor] = useState();
     const [background, setBackground] = useState();
+    const [opacity, setOpacity] = useState();
     
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
@@ -52,10 +53,13 @@ export function Home(){
     const [prevScrollPos, setPrevScrollPos] = useState();
     const [showComponentEffect, setComponentEffect] = useState(true);
     useEffect(() => {
-        const handleScroll = () => {
+        const handleScroll = async () => {
             const currScrollPos = window.pageYOffset;
             setComponentEffect(prevScrollPos > currScrollPos);
             setPrevScrollPos(window.pageYOffset);
+            // setOpacity(10)
+            // await sleep(500);
+            // setOpacity(100)
         }
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
@@ -88,7 +92,7 @@ export function Home(){
             <div className={`w-full `}>
                 <section className={`w-full md:mt-20 mx-auto p-5 pt-10 md:pt-40 transition-transform duration-500 ${showComponentEffect ? 'md:translate-y-0' : 'md:-translate-y-32' }`}>
                     {/* <h1 className="text-6xl mb-4">Skills</h1> */}
-                    <div className="md:grid md:grid-cols-3 gap-10">
+                    <div className={`md:grid md:grid-cols-3 gap-10`}>
                         <div className="flex flex-col p-1 pb-10">
                             <div className="w-full flex gap-2">
                                 <div className="flex items-center justify-center">
@@ -177,7 +181,7 @@ export function Home(){
                             <p className="leading-9 transition-transform duration-1000 hover:translate-y-5">
                                I have projects relating to web development and security. The first one is called "Chatogram"
                                which is a modern chatting web application with best security practices. For offensive security related tools,
-                               I have created and released kaiser-webhooks, js-parse, meowpi, and js-parse bookmarks. They can be seen in my github pins
+                               I have created and released kaiser-webhook, js-parse, meowpi, and js-parse bookmark. They can be seen in my github pins
                                here: <a className="text-blue-500 underline hover:no-underline" href="https://github.com/AtlasWiki">Github Profile</a>
                             </p>
                         </div>
@@ -185,7 +189,7 @@ export function Home(){
                 </section>
                 <section className={`mt-10 pt-10 py-80 bg-gradient-to-r from-stone-400 to-slate-500 overflow-hidden transition-transform duration-500 `}>
                     <div className="w-full md:w-3/4">
-                        <div className={`flex flex-col gap-2 ml-10 transition-transform duration-500 pb-2 ${showComponentEffect ? 'md:translate-y-0' : 'md:translate-x-12'} ${showComponentEffect ? 'md:translate-y-0' : 'md:translate-y-24'}`}>
+                        <div className={`flex flex-col gap-2 ml-10 transition-transform duration-500 pb-2 opacity-${opacity} ${showComponentEffect ? 'md:translate-y-0' : 'md:translate-x-12'} ${showComponentEffect ? 'md:translate-y-0' : 'md:translate-y-24'}`}>
                             <h1 className="text-4xl">About Me</h1>
                             <p className="transition-transform duration-1000 hover:translate-y-5 leading-8 text-lg mb-4">Currently I am a fullstack web developer and cybersecurity student driven in learning about the security landscape.
                                 In my freetime, I hunt for vulnerabilities on bug bounty programs and collaborate with others while keeping up with security trends.
