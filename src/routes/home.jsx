@@ -22,7 +22,7 @@ export function Home(){
 
             const interval = setInterval(async () => {
                 setColor('text-green-700')
-                setBackground('bg-gray-800')
+                setBackground('md:bg-gray-800')
                 
                 let titleLength = titles[incorrectIndex].length;
                 for (let i = 0; i < titleLength; i++) {
@@ -76,7 +76,7 @@ export function Home(){
                 <div className="flex flex-col gap-12 text-center items-center mt-40 md:mt-60 justify-center bg-gradient-to-r from-stone-400 to-slate-500 pb-40 md:pb-72">
                     <h1 className='text-5xl md:text-8xl font-sans font-normal'>Nathan Wong</h1>
                     <div>
-                        <h2 className={`font-mono text-4xl ${color} ${background}`}>{'<'}{text}{'>'}</h2>
+                        <h2 className={`font-mono text-lg md:text-4xl ${color} ${background}`}>{'<'}{text}{'>'}</h2>
                         {/* <h2 className="font-mono text-md text-gray-600">{'<'}Cybersecurity Enthusiast{'>'}</h2> */}
                     </div>
                     <div className="flex gap-5">
