@@ -121,7 +121,7 @@ export function Home(){
                             <p className="leading-9 transition-transform duration-1000 hover:translate-y-5">
                                 From my prior work experience and projects, I have incorporated and worked with frameworks such as Vitejs, Nextjs, Reactjs, Tailwindcss, Express, Nestjs.
                                 I've created a github CI/CD system in order to collaborate with my team using an organizational system in place.
-                                I am familiar with bash, git-bash, vscode, PostgreSQL, TypeORM, JWT, best security practices, session management, cryptography, and authentication.
+                                I am familiar with docker, bash, git-bash, vscode, PostgreSQL, TypeORM, JWT, best security practices, session management, cryptography, and authentication.
                                 Collaborated with my team and Incorporated OWASP TOP 10 techniques, performed security testing and custom API testing/development.
                             </p>
                         </div>
